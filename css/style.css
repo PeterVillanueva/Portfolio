@@ -1,9 +1,9 @@
 /*
 Template Name: Peter Villanueva - Personal Portfolio
 Author: Peter Donniel P. Villanueva
-Author URI: https://PeterVillanueva.github.io/Portfolio
+Author URL: https://petervillanueva.github.io/Portfolio
 Description: Peter Villanueva - Personal Portfolio
-Version: 2.2 (Nov. 22, 2022)
+Version: 2.2 (11/22/22)
 */
 
 /*------------------------------------------------------------------
@@ -15,11 +15,10 @@ Version: 2.2 (Nov. 22, 2022)
 		- Page Title
 	+ Header
 		- Desktop Navigation
-		- Mobile Navigation
 	+ Pages
 		- Homepage
 		+ About
-		    - Personal Info List
+		  - Personal Info List
 			- Box Stats
 			- Resume
 			- Skills
@@ -36,6 +35,7 @@ Version: 2.2 (Nov. 22, 2022)
             - Latest Posts
             - Pagination
 	- Responsive Design Styles
+  - Mobile Navigation
 -------------------------------------------------------------------*/
 
 /* [ GENERAL ] */
@@ -71,7 +71,7 @@ body {
 }
 
 hr.separator {
-  border-top: 3px solid #252525;
+  border-top: 1.5px solid #252525;
   margin: 70px auto 55px;
   max-width: 40%;
 }
@@ -573,7 +573,7 @@ body.light hr.separator {
 .about .box-stats {
   padding: 20px 30px 25px 40px;
   border-radius: 5px;
-  border: 3px solid #252525;
+  border: 1.5px solid #252525;
 }
 
 .about .box-stats.with-margin {
