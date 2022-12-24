@@ -62,11 +62,11 @@
 		}
 
 		/* ----------------------------------------------------------- */
-		/*  AJAX CONTACT FORM
+		/*  CONTACT FORM
         /* ----------------------------------------------------------- */
 
 		$(".contactform").on("submit", function() {
-			$(".output_message").text("Sending...");
+			$(".output_message").text("Message Sent!");
 
 			var form = $(this);
 			$.ajax({
