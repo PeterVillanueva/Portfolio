@@ -44,8 +44,14 @@ Version: 2.2 (11/22/22)
 /*** Miscellaneous ***/
 
 html {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
   overflow-x: hidden;
   height: 100%;
+}
+html::-webkit-scrollbar{
+  display: none; 
 }
 
 body {
@@ -109,7 +115,7 @@ body.home.light .home-details h6 {
 }
 
 body.home.light .bg {
-  background-image: url(peter.jpg);
+  background-image: url(/peter1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -314,14 +320,14 @@ body.light hr.separator {
 /*** Buttons ***/
 .btn {
   box-shadow: none !important;
-  border-radius: 26px;
+  border-radius: 35px;
   font-weight: 500;
   height: 46px;
   line-height: 46px;
   font-size: 15px;
   text-transform: uppercase;
   color: #fff;
-  padding: 0 40px;
+  padding: 0 50px;
   outline: none !important;
   overflow: hidden;
   display: inline-block;
@@ -499,15 +505,15 @@ body.light hr.separator {
 }
 
 .home .bg {
-  background-image: url(peter.jpg);
+  background-image: url(/peter.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   height: calc(100vh - 60px);
   z-index: 111;
-  border-radius: 15px;
-  left: 30px;
-  top: 30px;
+  border-radius: 30px;
+  left: 40px;
+  top: 40px;
   box-shadow: 0 0 7px rgba(0,0,0,.9);
 }
 
@@ -523,15 +529,16 @@ body.light hr.separator {
 }
 
 .home .home-details h1 {
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 38px;
+  line-height: 48px;
   font-weight: 700;
-  margin: 18px 0 10px;
+  margin: 29px 0 13px;
 }
 
 .home .home-details h1 span {
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
+  display: block;
 }
 
 .home .home-details h6 {
