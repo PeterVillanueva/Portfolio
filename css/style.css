@@ -1,7 +1,7 @@
 /*
-Template Name: Tunis - Personal Portfolio
-Author: celtano
-Author URI: http://themeforest.net/user/celtano
+Template Name: Peter Villanueva - Personal Portfolio
+Author: Peter Villanueva
+Author URI: https://villanueva-portfolio.vercel.app
 Description: Tunis - Personal Portfolio
 Version: 1.0
 */
@@ -576,17 +576,7 @@ body.light hr.separator {
   font-weight: 700;
   margin: 18px 0 10px;
   position: relative;
-  padding-left: 70px;
-}
-
-.home .home-details h1:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 29px;
-  height: 4px;
-  width: 40px;
-  border-radius: 10px;
+  padding-left: 0px;
 }
 
 .home .home-details h1 span {
@@ -1071,7 +1061,7 @@ body.light hr.separator {
 }
 
 .contact ul.social {
-  margin-left: -5px;
+  margin-left: -10px;
 }
 
 .contact ul.social li {
