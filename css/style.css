@@ -1,9 +1,9 @@
 /*
-Template Name: Peter Villanueva - Personal Portfolio
-Author: Peter Donniel P. Villanueva
-Author URL: https://petervillanueva.github.io/Portfolio
-Description: Peter Villanueva - Personal Portfolio
-Version: 2.2 (11/22/22)
+Template Name: Tunis - Personal Portfolio
+Author: celtano
+Author URI: http://themeforest.net/user/celtano
+Description: Tunis - Personal Portfolio
+Version: 1.0
 */
 
 /*------------------------------------------------------------------
@@ -15,10 +15,11 @@ Version: 2.2 (11/22/22)
 		- Page Title
 	+ Header
 		- Desktop Navigation
+		- Mobile Navigation
 	+ Pages
 		- Homepage
 		+ About
-		  - Personal Info List
+		    - Personal Info List
 			- Box Stats
 			- Resume
 			- Skills
@@ -35,7 +36,6 @@ Version: 2.2 (11/22/22)
             - Latest Posts
             - Pagination
 	- Responsive Design Styles
-  - Mobile Navigation
 -------------------------------------------------------------------*/
 
 /* [ GENERAL ] */
@@ -44,8 +44,6 @@ Version: 2.2 (11/22/22)
 /*** Miscellaneous ***/
 
 html {
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
   overflow-x: hidden;
   height: 100%;
 }
@@ -76,7 +74,7 @@ body {
 }
 
 hr.separator {
-  border-top: 1.5px solid #252525;
+  border-top: 1px solid #252525;
   margin: 70px auto 55px;
   max-width: 40%;
 }
@@ -105,8 +103,13 @@ body.light {
   background-color: #fff;
 }
 
-body.home.light .home-details h1 span {
+body.home.light .home-details h1 span,
+body.light .button .button-text {
   color: #666;
+}
+
+body.light .button:hover .button-text {
+  color: #fff;
 }
 
 body.home.light .home-details h6 {
@@ -317,30 +320,70 @@ body.light hr.separator {
   }
 }
 /*** Buttons ***/
-.btn {
-  box-shadow: none !important;
-  border-radius: 35px;
-  font-weight: 500;
-  height: 46px;
-  line-height: 46px;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 0 50px;
-  outline: none !important;
+.button {
   overflow: hidden;
   display: inline-block;
+  line-height: 1.4;
+  border-radius: 35px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+  transition: 250ms all ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none !important;
   position: relative;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: .5px;
-  border: 0;
+  z-index: 1;
+  padding: 16px 70px 16px 35px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+  outline: none !important;
 }
 
-.btn,
-.btn:hover,
-.btn:focus {
+.button .button-text {
+  position: relative;
+  z-index: 2;
   color: #fff;
-  text-decoration: none;
+  transition: .3s ease-out all;
+}
+
+.button:before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: .3s ease-out all;
+}
+
+.button:hover .button-text {
+  color: #ffffff;
+}
+
+.button:hover:before {
+  transform: translateX(0);
+}
+
+.button-icon {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  bottom: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  color: #ffffff;
+  border-radius: 50%;
 }
 
 /*** Page Title ***/
@@ -528,15 +571,26 @@ body.light hr.separator {
 }
 
 .home .home-details h1 {
-  font-size: 44px;
-  line-height: 48px;
+  font-size: 51px;
+  line-height: 62px;
   font-weight: 700;
-  margin: 29px 0 13px;
+  margin: 18px 0 10px;
+  position: relative;
+  padding-left: 70px;
+}
+
+.home .home-details h1:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 29px;
+  height: 4px;
+  width: 40px;
+  border-radius: 10px;
 }
 
 .home .home-details h1 span {
   color: #fff;
-  font-weight: 700;
   display: block;
 }
 
@@ -548,9 +602,9 @@ body.light hr.separator {
 }
 
 .home .home-details p {
-  margin: 10px 0 23px;
+  margin: 15px 0 28px;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 35px;
 }
 
 /*** About ***/
@@ -579,7 +633,7 @@ body.light hr.separator {
 .about .box-stats {
   padding: 20px 30px 25px 40px;
   border-radius: 5px;
-  border: 1.5px solid #252525;
+  border: 1px solid #252525;
 }
 
 .about .box-stats.with-margin {
@@ -611,9 +665,9 @@ body.light hr.separator {
   content: "";
   position: absolute;
   left: 0;
-  top: 5px;
+  top: 13px;
   width: 30px;
-  height: 2px;
+  height: 1px;
   background: #777;
 }
 
@@ -641,12 +695,12 @@ body.light hr.separator {
 }
 
 .about .resume-box .icon {
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   left: 0;
   right: 0;
-  line-height: 46px;
+  line-height: 40px;
   text-align: center;
   z-index: 1;
   border-radius: 50%;
@@ -655,7 +709,6 @@ body.light hr.separator {
 }
 
 .about .resume-box .time {
-
   color: #fff;
   font-size: 12px;
   padding: 1px 10px;
@@ -1018,7 +1071,7 @@ body.light hr.separator {
 }
 
 .contact ul.social {
-  margin-left: -7px;
+  margin-left: -5px;
 }
 
 .contact ul.social li {
@@ -1232,6 +1285,22 @@ body.light hr.separator {
   }
 }
 
+@media (max-width: 1200px) {
+  .home .home-details h1 {
+    padding-left: 0;
+  }
+  .home .home-details h1:before {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .home .home-details h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
+
 @media (max-width: 1100px) and (min-width: 992px) {
   .home .home-details > div {
     max-width: 450px;
@@ -1249,72 +1318,15 @@ body.light hr.separator {
     width: 100%;
     height: 100vh;
   }
- 
+
   body.home {
     overflow: hidden;
-  }
-
-  .btn:before {
-    font: 15px/1.2em FontAwesome;
-    color: #fff;
-    position: absolute;
-    height: 100%;
-    right: 25px;
-    top: 50%;
-    margin-top: -9px;
-    transition: all 0.3s;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transform: translateX(-20px);
-    transform: translateX(-20px);
-  }
-
-  .btn.btn-about:before {
-    content: "\f007";
-  }
-
-  .btn.btn-portfolio:before {
-    content: "\f07c";
-    margin-top: -8px;
-  }
-
-  .btn.btn-preview:before {
-    content: "\f08e";
-  }
-
-  .btn.btn-download:before {
-    content: "\f019";
-  }
-
-  .btn.btn-contact:before {
-    content: "\f1d8";
-  }
-
-  .btn span {
-    position: relative;
-    display: block;
-    transition: all 0.3s;
-  }
-
-  .btn:hover span {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
-  }
-
-  .btn:hover:before {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
   }
 }
 
 /* Mobile  Navigation */
 
 @media (max-width: 991px) {
-  .btn {
-    padding: 0 28px;
-  }
 
   body.home {
     padding: 25px;
@@ -1343,7 +1355,7 @@ body.light hr.separator {
 
   .home .home-details h1 {
     font-size: 38px;
-    line-height: 38px;
+    line-height: 48px;
     margin: 29px 0 13px;
   }
 
@@ -1576,9 +1588,6 @@ body.light hr.separator {
 }
 
 @media (max-width: 576px) {
-  .btn {
-    font-size: 14px;
-  }
 
   body {
     font-size: 14px;
@@ -1635,7 +1644,7 @@ body.light hr.separator {
 
   .home .home-details h1 {
     font-size: 29px;
-    line-height: 29px;
+    line-height: 39px;
     margin: 18px 0 13px;
   }
 
@@ -1743,6 +1752,7 @@ body.light hr.separator {
 
   .portfolio .slideshow nav span.nav-close {
     top: 21px;
+    width: 20px;
     height: 20px;
   }
 
@@ -1767,4 +1777,3 @@ body.light hr.separator {
     margin-top: 35px !important;
   }
 }
-  
