@@ -117,7 +117,7 @@ body.home.light .home-details h6 {
 }
 
 body.home.light .bg {
-  background-image: url(peter1.jpg);
+  background-image: url(/peter1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -547,7 +547,7 @@ body.light hr.separator {
 }
 
 .home .bg {
-  background-image: url(peter.jpg);
+  background-image: url(/peter.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
