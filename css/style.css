@@ -46,6 +46,7 @@ Version: 3.0 (12/29/22)
 html {
   overflow-x: hidden;
   height: 100%;
+  scroll-behavior: smooth;
 }
 html::-webkit-scrollbar{
   display: none; 
@@ -1038,7 +1039,7 @@ body.light hr.separator {
 
 .contact .custom-span-contact {
   font-weight: 600;
-  padding-left: 50px;
+  padding-left: 45px;
   line-height: 21px;
   padding-top: 5px;
 }
@@ -1344,8 +1345,8 @@ body.light hr.separator {
   }
 
   .home .home-details h1 {
-    font-size: 38px;
-    line-height: 48px;
+    font-size: 48px;
+    line-height: 52px;
     margin: 29px 0 13px;
   }
 
