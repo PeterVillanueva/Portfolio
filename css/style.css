@@ -1142,6 +1142,16 @@ body.light hr.separator {
   padding-right: 10px;
 }
 
+.contact .contactform .output_message.Success {
+  background: #28a745;
+}
+
+.contact .contactform .output_message.Success:before {
+  font-family: FontAwesome;
+  content: "\f14a";
+  padding-right: 10px;
+}
+
 /*** Blog ***/
 
 .blog .main-content {
