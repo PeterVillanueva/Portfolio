@@ -66,7 +66,7 @@
         /* ----------------------------------------------------------- */
 
 		$(".contactform").on("submit", function() {
-			$(".output_message").text("Message Sent!");
+			$(".output_message").text("Sending...");
 
 			var form = $(this);
 			$.ajax({
