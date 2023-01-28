@@ -81,7 +81,8 @@
 						$(".output_message").text("Message Sent!");
 					} else {
 						$(".tabs-container").css("height", "440px");
-						$(".contactform").find(".output_message").addClass("success");
+
+						$(".contactform").find(".output_message").addClass("Success");
 						$(".output_message").text("Message Sent!");
 					}
 				}
