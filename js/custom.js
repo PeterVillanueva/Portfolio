@@ -65,32 +65,25 @@
 		/*  AJAX CONTACT FORM
         /* ----------------------------------------------------------- */
 
-		$(".contactform").on("submit", function() {
+		$(".contactform").on("submit", function(event) {
+			event.preventDefault();
 			$(".output_message").text("Sending...");
-
 			var form = $(this);
 			$.ajax({
 				url: form.attr("action"),
 				method: form.attr("method"),
 				data: form.serialize(),
-				success: function(result) {
-					if (result == "success") {
+				complete: function(result) {
+					if (result = "success") {
 						$(".form-inputs").css("display", "none");
 						$(".box p").css("display", "none");
 						$(".contactform").find(".output_message").addClass("success");
 						$(".output_message").text("Message Sent!");
-					} else {
-						$(".tabs-container").css("height", "440px");
-
-						$(".contactform").find(".output_message").addClass("Success");
-						$(".output_message").text("Message Sent!");
 					}
 				}
 			});
-
-			return false;
 		});
-
+	
 	});
 
 	$(document).keyup(function(e) {
