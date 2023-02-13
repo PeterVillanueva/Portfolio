@@ -63,8 +63,29 @@ body {
   background-position: center;
   height: 100%;
   width: 100%;
-  background-color: #111;
+  background-color: #191d2b;
 }
+
+/*.theme-btn {
+  top: 5%;
+  right: 2.5%;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #2b2a2a;
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.theme-btn i {
+  font-size: 1.4rem;
+  color: #fff;
+  pointer-events: none;
+}*/
 
 .poppins-font {
   font-family: 'Poppins', sans-serif;
@@ -75,7 +96,7 @@ body {
 }
 
 hr.separator {
-  border-top: 1px solid #252525;
+  border-top: 1px solid #2a2e35;
   margin: 70px auto 55px;
   max-width: 40%;
 }
@@ -100,13 +121,13 @@ hr.separator {
 /*** Light Body ***/
 
 body.light {
-  color: #666;
+  color: #454e56;
   background-color: #fff;
 }
 
 body.home.light .home-details h1 span,
 body.light .button .button-text {
-  color: #666;
+  color: #454e56;
 }
 
 body.light .button:hover .button-text {
@@ -122,7 +143,7 @@ body.home.light .bg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  box-shadow: 0 0 7px rgba(0,0,0,.3);
+  box-shadow: 0 0 2px rgba(119, 119, 119, 0.1);
 }
 
 body.light .preloader .black_wall {
@@ -134,7 +155,7 @@ body.light .preloader {
 }
 
 body.light .title-section h1 {
-  color: #666;
+  color: #454e56;
 }
 
 body.light .title-bg {
@@ -152,11 +173,11 @@ body.light.about .resume-box .time {
 
 body.light.about .resume-box .time,
 body.light.about .resume-box p {
-  color: #666;
+  color: #454e56;
 }
 
 body.light.about .resume-box .place:before {
-  background-color: #666;
+  background-color: #454e56;
 }
 
 body.light.about  .resume-box li:after {
@@ -164,7 +185,7 @@ body.light.about  .resume-box li:after {
 }
 
 body.light.about .c100 > span {
-  color: #666;
+  color: #454e56;
 }
 
 body.light.about .c100:after {
@@ -188,11 +209,11 @@ body.light.contact .contactform input[type=email],
 body.light.contact .contactform textarea {
   background-color: #fff;
   border: 1px solid #ddd;
-  color: #666;
+  color: #454e56;
 }
 
 body.light.contact  ul.social li a {
-  color: #666;
+  color: #454e56;
   background: #eee;
 }
 
@@ -205,11 +226,11 @@ body.light.blog .post-content {
 }
 
 body.light.blog .post-content .entry-header h3 a {
-  color: #666;
+  color: #454e56;
 }
 
 body.light.blog .page-link {
-  color: #666;
+  color: #454e56;
   background-color: #eee;
   border: 1px solid #eee;
 }
@@ -232,7 +253,7 @@ body.light hr.separator {
   }
 
   body.light .header ul.icon-menu li.icon-box i {
-    color: #666;
+    color: #454e56;
   }
 
   body.light .header ul.icon-menu li.icon-box.active,
@@ -260,11 +281,11 @@ body.light hr.separator {
 
   body.light #menuToggle > span,
   body.light #menuToggle input:checked ~ span {
-    background: #666;
+    background: #454e56;
   }
 
   body.light #menu li a {
-    color: #666;
+    color: #454e56;
   }
 
   body.light #menu li:after {
@@ -456,8 +477,8 @@ body.light hr.separator {
   }
 
   .header ul.icon-menu li.icon-box {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     list-style: none;
     position: relative;
     display: flex;
@@ -465,7 +486,7 @@ body.light hr.separator {
     transition: .3s;
     margin: 20px 0;
     border-radius: 50%;
-    background: #2b2a2a;
+    background: #454e56;
   }
 
   .header ul.icon-menu li.icon-box i {
@@ -505,7 +526,7 @@ body.light hr.separator {
     display: block;
     text-align: center;
     font-size: 35px;
-    top: 15px;
+    top: 17px;
   }
 
   .header .icon-box h2 {
@@ -515,18 +536,18 @@ body.light hr.separator {
     right: 0;
     opacity: 0;
     color: #fff;
-    line-height: 50px;
+    line-height: 55px;
     font-weight: 500;
-    transition: all .3s;
+    transition: all .2s;
     border-radius: 30px;
     text-transform: uppercase;
     padding: 0 25px 0 30px;
-    height: 50px;
+    height: 55px;
   }
 
   .header .icon-box a:hover h2 {
     opacity: 1;
-    right: 27px;
+    right: 29px;
     margin: 0;
     text-align: center;
     border-radius: 30px 0 0 30px;
@@ -541,10 +562,11 @@ body.light hr.separator {
 .home .color-block {
   position: fixed;
   height: 200%;
-  width: 100%;
-  transform: rotate(-15deg);
-  left: -83%;
-  top: -50%;
+  width: 102%;
+  transform: rotate(-10deg);
+  left: -82%;
+  top: -46%;
+  
 }
 
 .home .bg {
@@ -557,7 +579,7 @@ body.light hr.separator {
   border-radius: 30px;
   left: 40px;
   top: 40px;
-  box-shadow: 0 0 7px rgba(0,0,0,.9);
+  box-shadow: 0 0 2px rgba(0,0,0,.1);
 }
 
 .home .container-home {
@@ -574,7 +596,7 @@ body.light hr.separator {
 .home .home-details h1 {
   font-size: 51px;
   line-height: 62px;
-  font-weight: 700;
+  font-weight: 800;
   margin: 18px 0 10px;
   position: relative;
   padding-left: 0px;
@@ -594,8 +616,8 @@ body.light hr.separator {
 
 .home .home-details p {
   margin: 15px 0 28px;
-  font-size: 16px;
-  line-height: 35px;
+  font-size: 16.5px;
+  line-height: 2rem;
 }
 
 /*** About ***/
@@ -624,9 +646,17 @@ body.light hr.separator {
 .about .box-stats {
   padding: 20px 30px 25px 40px;
   border-radius: 5px;
-  border: 1px solid #252525;
+  border: 1px solid #2a2e35;
+  box-shadow: 1px 2px 15px rgb(0 0 0 / 10%);
+  transition: all .4s ease-in-out;
 }
+.about .box-stats:hover {
+  cursor: default;
+  transform: translateY(-5px);
+  border: 1px solid red;
+  box-shadow: 1px 4px 15px rgba(0,0,0,.32);
 
+}
 .about .box-stats.with-margin {
   margin-bottom: 30px;
 }
@@ -696,7 +726,7 @@ body.light hr.separator {
   z-index: 1;
   border-radius: 50%;
   color: #fff;
-  background-color: #252525;
+  background-color: #2a2e35;
 }
 
 .about .resume-box .time {
@@ -707,7 +737,7 @@ body.light hr.separator {
   margin-bottom: 12px;
   border-radius: 20px;
   font-weight: 600;
-  background-color: #252525;
+  background-color: #2a2e35;
   opacity: .8;
 }
 
@@ -746,7 +776,7 @@ body.light hr.separator {
 .about .c100 {
   float: none !important;
   margin: 0 auto;
-  background-color: #252525;
+  background-color: #191d2b;
 }
 
 .about .c100 > span {
@@ -754,7 +784,7 @@ body.light hr.separator {
 }
 
 .about .c100:after {
-  background-color: #111;
+  background-color: #191d2b;
 }
 
 /*** Portfolio ***/
@@ -923,7 +953,7 @@ body.light hr.separator {
 .portfolio .slideshow figure {
   width: 100%;
   height: 100%;
-  background: #252525;
+  background: #2a2e35;
   padding: 30px;
   overflow: auto;
   border-radius: 10px;
@@ -1079,15 +1109,15 @@ body.light hr.separator {
   transition: .3s;
   font-size: 17px;
   margin: 0 6px;
-  background: #2b2a2a;
+  background: #2a2e35;
   border-radius: 50%;
 }
 /* Form */
 .contact .contactform input[type=text],
 .contact .contactform input[type=email] {
-  border: 1px solid #111;
+  border: 1px solid #191d2b;
   width: 100%;
-  background: #252525;
+  background: #2a2e35;
   color: #fff;
   padding: 11px 26px;
   margin-bottom: 30px;
@@ -1097,8 +1127,8 @@ body.light hr.separator {
 }
 
 .contact .contactform textarea {
-  border: 1px solid #111;
-  background: #252525;
+  border: 1px solid #191d2b;
+  background: #2a2e35;
   color: #fff;
   width: 100%;
   padding: 12px 26px;
@@ -1119,7 +1149,7 @@ body.light hr.separator {
   color: #fff;
   height: 46px;
   line-height: 46px;
-  border-radius: 30px;
+  border-radius: 35px;
 }
 
 .contact .contactform .output_message.success {
@@ -1165,7 +1195,7 @@ body.light hr.separator {
 }
 
 .blog .post-content {
-  background-color: #252525;
+  background-color: #2a2e35;
   padding: 20px 25px 25px 25px;
   border-radius: 0 0 5px 5px;
 }
@@ -1187,15 +1217,16 @@ body.light hr.separator {
 
 .blog .post-thumb a {
   border-radius: 5px 5px 0 0;
+  transition: all 0.4s ease-in-out;
 }
 
 .blog .post-container:hover img {
-  transform: scale(1.2);
+  transform: scale(1.09);
 }
 
 .blog .post-thumb a img {
   border-radius: 5px 5px 0 0;
-  transition: .3s;
+  transition: all 0.4s ease-in-out;
 }
 
 .blog .post-content .entry-content p {
@@ -1216,8 +1247,8 @@ body.light hr.separator {
 
 .blog .page-link {
   color: #fff;
-  background-color: #252525;
-  border: 1px solid #252525;
+  background-color: #2a2e35;
+  border: 1px solid #2a2e35;
   padding: 0;
   margin: 0 10px;
   border-radius: 50% !important;
@@ -1349,7 +1380,7 @@ body.light hr.separator {
     border-radius: 50%;
     width: 270px;
     height: 270px;
-    border: 4px solid #252525;
+    border: 4px solid #2a2e35;
     margin: 0 auto 25px;
     display: block;
   }
@@ -1377,7 +1408,7 @@ body.light hr.separator {
     width: 54px;
     height: 54px;
     border-radius: 5px;
-    background: #252525;
+    background: #2a2e35;
   }
 
   #menuToggle input {
@@ -1438,7 +1469,7 @@ body.light hr.separator {
     height: 100%;
     margin: 0;
     padding-top: 60px;
-    background-color: #252525;
+    background-color: #2a2e35;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0 0;
     transform: translate(-100%, 0);
@@ -1497,7 +1528,7 @@ body.light hr.separator {
   }
 
   .portfolio .slideshow {
-    background: #252525;
+    background: #2a2e35;
   }
 
   .portfolio .slideshow nav span {
@@ -1571,7 +1602,7 @@ body.light hr.separator {
     top: 0;
     width: 100%;
     height: 102px;
-    background: #252525;
+    background: #2a2e35;
     z-index: 1;
     border-bottom: 1px solid #333;
   }
@@ -1655,7 +1686,7 @@ body.light hr.separator {
 
   .title-section {
     padding: 16px 25px 14px;
-    background: #252525;
+    background: #2a2e35;
     border-bottom: 1px solid #333;
     margin-bottom: 36px;
     position: fixed;
