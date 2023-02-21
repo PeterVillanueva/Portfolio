@@ -64,6 +64,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #191d2b;
+  user-select: none;
 }
 
 /*.theme-btn {
